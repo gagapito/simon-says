@@ -1,0 +1,38 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \ul \ulc0 ILoColor Interface: \ulnone \
+represents a list of colors \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \ul \ulc0 MtLoColor Class: \ulnone \
+represents an empty-list of colors\
+\
+\ul ConsLoColor Class:\ulnone \
+represents a list of colors \
+Fields: \
+- Color first; \
+- ILoColor rest; \
+- Random rand; (used for testing randomness) \
+\
+\ul SimonSays Class: \ulnone \
+The class extends the world. \
+\
+Fields: \
+ILoColor total Sequence \
+- the entire list of colors that have been complied so far, each time the player correctly guess the sequence a random color is added to the list \
+\
+ILoColor remainingSequence \
+- this field has to two functions.\
+- the program runs through this list to flash the appropriate colors in the right order \
+- the program also checks that the color being selected matches the next color in the list \
+\
+boolean isGivingSequence \
+- returns true if the game is generating a sequence of lights and displaying it to the player, returns false when it accepts clicks from the player \
+\
+Color selectedColor \
+- the color of the user\'92s selection based on what button they click, this value is NULL while the colors are flashing and awaiting a selection from the player }
